@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>453827884566-fui6hsjlp5sgvom5q6g5voh9rip9cnib.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.453827884566-fui6hsjlp5sgvom5q6g5voh9rip9cnib</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlPNleoRN8Sr3FBSVO59YcCf6a_t50XGY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>453827884566</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.project3.loku-phone-auth</string>
+	<key>PROJECT_ID</key>
+	<string>loku-phone-auth</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loku-phone-auth.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:453827884566:ios:7ea6bcd23dbd35c4d2a737</string>
+</dict>
+</plist>

@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B9A19E329D393ED00A0F19A /* loku_phone_authApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A19E229D393ED00A0F19A /* loku_phone_authApp.swift */; };
+		4B9A19E529D393ED00A0F19A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A19E429D393ED00A0F19A /* ContentView.swift */; };
+		4B9A19E729D393EE00A0F19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A19E629D393EE00A0F19A /* Assets.xcassets */; };
+		4B9A19EA29D393EE00A0F19A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A19E929D393EE00A0F19A /* Preview Assets.xcassets */; };
+		4B9A19F129D395A400A0F19A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A19F029D395A400A0F19A /* GoogleService-Info.plist */; };
+		4B9A19F429D3966D00A0F19A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4B9A19F329D3966D00A0F19A /* FirebaseAnalytics */; };
+		4B9A19F629D3966D00A0F19A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B9A19F529D3966D00A0F19A /* FirebaseAuth */; };
+		4B9A19F829D3966D00A0F19A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4B9A19F729D3966D00A0F19A /* FirebaseDatabase */; };
+		4B9A19FA29D3966D00A0F19A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4B9A19F929D3966D00A0F19A /* FirebaseFirestore */; };
+		4B9A19FC29D3966D00A0F19A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B9A19FB29D3966D00A0F19A /* FirebaseStorage */; };
+		4B9A19FF29D39BB600A0F19A /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A19FE29D39BB600A0F19A /* Verification.swift */; };
+		4B9A1A0329D39E3200A0F19A /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A1A0229D39E3200A0F19A /* OTPViewModel.swift */; };
+		4B9A1A0629D3AB0900A0F19A /* PhoneSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A1A0529D3AB0900A0F19A /* PhoneSignUpView.swift */; };
+		4B9A1A0929D3ABD800A0F19A /* CountryNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B9A1A0829D3ABD800A0F19A /* CountryNumbers.json */; };
+		4B9A1A0B29D3ABE500A0F19A /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A1A0A29D3ABE500A0F19A /* CountryData.swift */; };
+		4B9A1A0D29D3ABED00A0F19A /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A1A0C29D3ABED00A0F19A /* Decoder.swift */; };
+		4B9A1A0F29D3ADCB00A0F19A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A1A0E29D3ADCB00A0F19A /* Login.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B9A19DF29D393ED00A0F19A /* loku phone auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loku phone auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9A19E229D393ED00A0F19A /* loku_phone_authApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loku_phone_authApp.swift; sourceTree = "<group>"; };
+		4B9A19E429D393ED00A0F19A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B9A19E629D393EE00A0F19A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B9A19E929D393EE00A0F19A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B9A19F029D395A400A0F19A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B9A19FE29D39BB600A0F19A /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		4B9A1A0229D39E3200A0F19A /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		4B9A1A0429D3A8A300A0F19A /* loku-phone-auth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "loku-phone-auth-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4B9A1A0529D3AB0900A0F19A /* PhoneSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignUpView.swift; sourceTree = "<group>"; };
+		4B9A1A0829D3ABD800A0F19A /* CountryNumbers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountryNumbers.json; sourceTree = "<group>"; };
+		4B9A1A0A29D3ABE500A0F19A /* CountryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		4B9A1A0C29D3ABED00A0F19A /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		4B9A1A0E29D3ADCB00A0F19A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B9A19DC29D393ED00A0F19A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9A19F829D3966D00A0F19A /* FirebaseDatabase in Frameworks */,
+				4B9A19FA29D3966D00A0F19A /* FirebaseFirestore in Frameworks */,
+				4B9A19F429D3966D00A0F19A /* FirebaseAnalytics in Frameworks */,
+				4B9A19FC29D3966D00A0F19A /* FirebaseStorage in Frameworks */,
+				4B9A19F629D3966D00A0F19A /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B9A19D629D393ED00A0F19A = {
+			isa = PBXGroup;
+			children = (
+				4B9A19E129D393ED00A0F19A /* loku phone auth */,
+				4B9A19E029D393ED00A0F19A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B9A19E029D393ED00A0F19A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A19DF29D393ED00A0F19A /* loku phone auth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B9A19E129D393ED00A0F19A /* loku phone auth */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A1A0429D3A8A300A0F19A /* loku-phone-auth-Info.plist */,
+				4B9A19F029D395A400A0F19A /* GoogleService-Info.plist */,
+				4B9A1A0129D39E0B00A0F19A /* ViewModel */,
+				4B9A19FD29D39BA100A0F19A /* View */,
+				4B9A19E229D393ED00A0F19A /* loku_phone_authApp.swift */,
+				4B9A19E429D393ED00A0F19A /* ContentView.swift */,
+				4B9A19E629D393EE00A0F19A /* Assets.xcassets */,
+				4B9A1A0729D3ABB200A0F19A /* Utilities */,
+				4B9A19E829D393EE00A0F19A /* Preview Content */,
+			);
+			path = "loku phone auth";
+			sourceTree = "<group>";
+		};
+		4B9A19E829D393EE00A0F19A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A19E929D393EE00A0F19A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B9A19FD29D39BA100A0F19A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A19FE29D39BB600A0F19A /* Verification.swift */,
+				4B9A1A0529D3AB0900A0F19A /* PhoneSignUpView.swift */,
+				4B9A1A0E29D3ADCB00A0F19A /* Login.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B9A1A0129D39E0B00A0F19A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A1A0229D39E3200A0F19A /* OTPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B9A1A0729D3ABB200A0F19A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4B9A1A0829D3ABD800A0F19A /* CountryNumbers.json */,
+				4B9A1A0A29D3ABE500A0F19A /* CountryData.swift */,
+				4B9A1A0C29D3ABED00A0F19A /* Decoder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B9A19DE29D393ED00A0F19A /* loku phone auth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9A19ED29D393EE00A0F19A /* Build configuration list for PBXNativeTarget "loku phone auth" */;
+			buildPhases = (
+				4B9A19DB29D393ED00A0F19A /* Sources */,
+				4B9A19DC29D393ED00A0F19A /* Frameworks */,
+				4B9A19DD29D393ED00A0F19A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "loku phone auth";
+			packageProductDependencies = (
+				4B9A19F329D3966D00A0F19A /* FirebaseAnalytics */,
+				4B9A19F529D3966D00A0F19A /* FirebaseAuth */,
+				4B9A19F729D3966D00A0F19A /* FirebaseDatabase */,
+				4B9A19F929D3966D00A0F19A /* FirebaseFirestore */,
+				4B9A19FB29D3966D00A0F19A /* FirebaseStorage */,
+			);
+			productName = "loku phone auth";
+			productReference = 4B9A19DF29D393ED00A0F19A /* loku phone auth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B9A19D729D393ED00A0F19A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4B9A19DE29D393ED00A0F19A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4B9A19DA29D393ED00A0F19A /* Build configuration list for PBXProject "loku phone auth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B9A19D629D393ED00A0F19A;
+			packageReferences = (
+				4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 4B9A19E029D393ED00A0F19A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B9A19DE29D393ED00A0F19A /* loku phone auth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B9A19DD29D393ED00A0F19A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9A19EA29D393EE00A0F19A /* Preview Assets.xcassets in Resources */,
+				4B9A19F129D395A400A0F19A /* GoogleService-Info.plist in Resources */,
+				4B9A19E729D393EE00A0F19A /* Assets.xcassets in Resources */,
+				4B9A1A0929D3ABD800A0F19A /* CountryNumbers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B9A19DB29D393ED00A0F19A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9A1A0329D39E3200A0F19A /* OTPViewModel.swift in Sources */,
+				4B9A1A0629D3AB0900A0F19A /* PhoneSignUpView.swift in Sources */,
+				4B9A19FF29D39BB600A0F19A /* Verification.swift in Sources */,
+				4B9A19E529D393ED00A0F19A /* ContentView.swift in Sources */,
+				4B9A1A0D29D3ABED00A0F19A /* Decoder.swift in Sources */,
+				4B9A1A0B29D3ABE500A0F19A /* CountryData.swift in Sources */,
+				4B9A19E329D393ED00A0F19A /* loku_phone_authApp.swift in Sources */,
+				4B9A1A0F29D3ADCB00A0F19A /* Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B9A19EB29D393EE00A0F19A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B9A19EC29D393EE00A0F19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B9A19EE29D393EE00A0F19A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"loku phone auth/Preview Content\"";
+				DEVELOPMENT_TEAM = QNRZCZCWSJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "loku-phone-auth-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project3.loku-phone-auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B9A19EF29D393EE00A0F19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"loku phone auth/Preview Content\"";
+				DEVELOPMENT_TEAM = QNRZCZCWSJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "loku-phone-auth-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.project3.loku-phone-auth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B9A19DA29D393ED00A0F19A /* Build configuration list for PBXProject "loku phone auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9A19EB29D393EE00A0F19A /* Debug */,
+				4B9A19EC29D393EE00A0F19A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9A19ED29D393EE00A0F19A /* Build configuration list for PBXNativeTarget "loku phone auth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9A19EE29D393EE00A0F19A /* Debug */,
+				4B9A19EF29D393EE00A0F19A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B9A19F329D3966D00A0F19A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4B9A19F529D3966D00A0F19A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4B9A19F729D3966D00A0F19A /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		4B9A19F929D3966D00A0F19A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4B9A19FB29D3966D00A0F19A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B9A19F229D3966D00A0F19A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B9A19D729D393ED00A0F19A /* Project object */;
+}
