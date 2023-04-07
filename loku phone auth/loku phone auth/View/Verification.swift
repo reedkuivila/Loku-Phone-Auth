@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct Verification: View {
-    @StateObject var otpModel: OTPViewModel = .init()
+    @EnvironmentObject var otpModel: OTPViewModel
     // textfield focus status
     @FocusState var activeField: OTPField?
 
     var body: some View {
         VStack{
             OTPField()
-            
+
             Button{
-              print("verify code")
+                print("verify code")
+                Task{otpModel.verifyOTP}
             } label: {
                 Text("Verify")
                     .fontWeight(.semibold)
@@ -27,17 +28,24 @@ struct Verification: View {
                     .background{
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(.blue)
+                            .opacity(otpModel.isLoading ? 0 : 1)
                     }
+                    .overlay {
+                        ProgressView()
+                            .opacity(otpModel.isLoading ? 0 : 1)
+                    }
+
             }
             .disabled(checkStatus())
             .opacity(checkStatus() ? 0.4 : 1)
             .padding(.vertical)
-            
+
             HStack(spacing: 12){
                 Text("Didn't get a code?")
+                    .multilineTextAlignment(.center)
                     .font(.caption)
                     .foregroundColor(.gray)
-                
+
                 Button("Resend Code"){}
                     .font(.callout)
             }
@@ -49,34 +57,51 @@ struct Verification: View {
         .onChange(of: otpModel.otpFields) {newValue in
             OTPCondition(value: newValue)
         }
+        .alert(otpModel.errorMessage, isPresented: $otpModel.showAlert) {}
+
     }
-    
+
     func checkStatus() -> Bool{
         for index in 0..<6{
             if otpModel.otpFields[index].isEmpty{return true}
-            
+
         }
         return false
     }
-    
+
     // conditions for custom OTP Field
     // limit only one integer per line
     func OTPCondition(value: [String]) {
-        
+
+        // check if the auto fetch OTP is presses
+        for index in 0..<6 {
+            if value[index].count == 6 {
+                DispatchQueue.main.async {
+                    otpModel.otpText = value[index]
+                    otpModel.otpFields[index] = ""
+
+                    // update each individual text field
+                    for item in otpModel.otpText.enumerated(){
+                        otpModel.otpFields[item.offset] = String(item.element)
+                    }
+                }
+                return
+            }
+        }
         // move to the next block/text field
         for index in 0..<5{
             if value[index].count == 1 && activeStateForIndex(index: index) == activeField{
                 activeField = activeStateForIndex(index: index + 1)
             }
         }
-        
+
         // move backwards if number deleted
         for index in 1...5{
             if value[index].isEmpty && !value[index - 1].isEmpty{
                 activeField = activeStateForIndex(index: index - 1)
             }
         }
-        
+
         // limit to one number per text field
         for index in 0..<6{
             if value[index].count > 1{
@@ -84,7 +109,7 @@ struct Verification: View {
             }
         }
     }
-    
+
     // create the lines for the OTP verification code
     @ViewBuilder
     func OTPField() -> some View{
@@ -96,7 +121,7 @@ struct Verification: View {
                         .textContentType(.oneTimeCode)
                         .multilineTextAlignment(.center)
                         .focused($activeField, equals: activeStateForIndex(index: index))
-                    
+
                     Rectangle()
                         .fill(activeField == activeStateForIndex(index: index) ? .blue :
                                 .gray.opacity(0.3))
@@ -104,10 +129,10 @@ struct Verification: View {
                 }
                 .frame(width: 40)
             }
-            
+
         }
     }
-    
+
     func activeStateForIndex(index: Int) -> OTPField{
         switch index{
         case 0: return .field1
@@ -136,3 +161,5 @@ enum OTPField{
     case field5
     case field6
 }
+
+

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("log_status") var log_status = false
+    @EnvironmentObject var otpModel: OTPViewModel
+    
     var body: some View {
         NavigationView{
             if log_status{
